@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v13/22JRxvfANxSmnAhzbFH8PgLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+    unicode-range: U+0000-00FF;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,10 +13,78 @@
 }
 
 body {
-    
+    font-family: 'Lato', sans-serif;
 }
 header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(images/paris/3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    color: white;
+}
+.header_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    background: rgba(0, 0, 0, 0.4);
+}
+section {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+
+}
+section .sidebar {
+    width: 150px;
+    padding: 20px 10px 0 20px;
+}
+section h3 {
+    width: 100%;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 50px;
+    margin: 0;
+}
+section .column {
+    display: inline-block;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+}
+section:nth-of-type(1) .column.paris {
+    background-image: url(images/paris/1.jpg);
+}
+section:nth-of-type(1) .column.dallas {
+    background-image: url(images/dallas/1.jpg);
+}
+section:nth-of-type(2) .column.paris {
+    background-image: url(images/paris/2.jpg);
+}
+section:nth-of-type(2) .column.dallas {
+    background-image: url(images/dallas/2.jpg);
+}
+section:nth-of-type(3) .column.paris {
+    background-image: url(images/paris/3.jpg);
+}
+section:nth-of-type(3) .column.dallas {
+    background-image: url(images/dallas/3.jpg);
+}
+section:nth-of-type(4) .column.paris {
+    background-image: url(images/paris/4.jpg);
+}
+section:nth-of-type(4) .column.dallas {
+    background-image: url(images/dallas/4.jpg);
+}
+section:nth-of-type(5) .column.paris {
+    background-image: url(images/paris/5.jpg);
+}
+section:nth-of-type(5) .column.dallas {
+    background-image: url(images/dallas/5.jpg);
 }
