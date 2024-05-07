@@ -64,6 +64,9 @@ section .column {
     color: white;
     padding: 30px;
 }
+section .column img {
+    max-width: 100%;
+}
 section:nth-of-type(1) .column.paris {
     background:
         linear-gradient(
