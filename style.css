@@ -54,6 +54,7 @@ section h3 {
 }
 section .column {
     display: inline-block;
+    background-attachment: fixed;
     background-size: cover;
     color: white;
     padding: 20px;
