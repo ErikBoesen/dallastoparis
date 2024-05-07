@@ -14,17 +14,23 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+p {
+    line-height: 1.3;
+    margin: 10px 0;
 }
 header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(images/paris/3.jpg);
     background-size: cover;
     background-position: center;
-    height: 80vh;
     color: white;
+    background: #333;
 }
 .header_content {
     display: flex;
@@ -32,17 +38,17 @@ header {
     justify-content: center;
     align-items: center;
     padding: 60px 40px;
-    background: rgba(0, 0, 0, 0.4);
 }
 section {
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: row;
-
 }
 section .sidebar {
-    width: 150px;
+    width: 80px;
     padding: 20px 10px 0 20px;
+    background: #222;
+    color: white;
 }
 section h3 {
     width: 100%;
@@ -53,39 +59,95 @@ section h3 {
     margin: 0;
 }
 section .column {
-    display: inline-block;
-    background-attachment: fixed;
-    background-size: cover;
+    flex: 1;
+    background-attachment: fixed !important;
+    background-size: cover !important;
     color: white;
     padding: 20px;
 }
 section:nth-of-type(1) .column.paris {
-    background-image: url(images/paris/1.jpg);
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url(images/paris/1.jpg);
 }
 section:nth-of-type(1) .column.dallas {
-    background-image: url(images/dallas/1.jpg);
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url(images/dallas/1.jpg);
 }
 section:nth-of-type(2) .column.paris {
-    background-image: url(images/paris/2.jpg);
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url(images/paris/2.jpg);
 }
 section:nth-of-type(2) .column.dallas {
-    background-image: url(images/dallas/2.jpg);
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url(images/dallas/2.jpg);
 }
 section:nth-of-type(3) .column.paris {
-    background-image: url(images/paris/3.jpg);
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url(images/paris/3.jpg);
 }
 section:nth-of-type(3) .column.dallas {
-    background-image: url(images/dallas/3.jpg);
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url(images/dallas/3.jpg);
 }
 section:nth-of-type(4) .column.paris {
-    background-image: url(images/paris/4.jpg);
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url(images/paris/4.jpg);
 }
 section:nth-of-type(4) .column.dallas {
-    background-image: url(images/dallas/4.jpg);
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url(images/dallas/4.jpg);
 }
 section:nth-of-type(5) .column.paris {
-    background-image: url(images/paris/5.jpg);
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url(images/paris/5.jpg);
 }
 section:nth-of-type(5) .column.dallas {
-    background-image: url(images/dallas/5.jpg);
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url(images/dallas/5.jpg);
+}
+article {
+    padding: 20px;
+}
+footer {
+
 }
