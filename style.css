@@ -149,6 +149,8 @@ section:nth-of-type(5) .column.dallas {
 }
 article {
     padding: 20px;
+    color: white;
+    background: #111;
 }
 footer {
 
